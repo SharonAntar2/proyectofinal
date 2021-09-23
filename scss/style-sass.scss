@@ -1,0 +1,25 @@
+// VARIABLES
+$primario : #e7af3c;
+$secundario : #e65a4b;
+$gris : #2c3e50;
+$titulares : #b90d0d;
+
+// MAPA
+$colores: (
+    "primario" : $primario,
+    "secundario" : $secundario,
+    "gris" : $gris,
+    "titulares" : $titulares
+);
+
+// EACH
+@each $propiedad, $valor in $colores {
+    .bg-#{$propiedad}{
+        background-color: $valor;
+    }
+}
+
+
+
+
+

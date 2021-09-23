@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:hover{
+    color: #fff;
+}
+.contain{
+    
+    width:90%;
+   /* max-width:1000px; */
+    margin:auto;
+
+
+    display:flex;
+    flex-flow:row wrap;
+}
+
+.active{
+    background: #e74c3c;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+    background-image:url("https://static.affinity-petcare.com/advance/cdn/farfuture/3QXPwo_KnbEFYYIOgRdVZu8OYK9W1BNaYntk7dHGk2s/drupal-cache:qvko3p/sites/default/files/field/image/perros-y-gatos-juntos_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+   /* background-color:#e7af3c; */
+    width:100%;
+    padding:20px;
+
+
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+header .logo {
+    color:#fff;
+    font-size:30px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+header .logo img {
+    width: 100px;
+    vertical-align: top;
+}
+
+header .logo a {
+    color:rgb(185, 13, 13);
+    text-decoration: none;
+    line-height:50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    margin-left: 10px;
+
+    animation: logoAnimacion 1.5s 1 ease;
+}
+
+@keyframes logoAnimacion {
+    from{transform: scale(0.8)}
+    to{transform: scale(1)}
+}
+
+header nav {
+    width:50%;
+
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+header nav a {
+    background :#e65a4b;
+    color:rgb(233, 233, 233);
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+
+    flex-grow:1;
+}
+
+header nav a:hover {
+    transition: all .5s ease;
+    background:#e74c3c;
+    transform: scale(1.1);
+}
+
+.main {
+
+    padding:20px;
+
+    flex:1 1 70%;
+}
+
+
+.main article {
+    margin-bottom: 20px;
+    padding-bottom:20px;
+}
+
+.main .contenido-texto .titulo{
+    margin-bottom: 1rem;
+}
+
+.main .contenido-texto .parrafo{
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.contenedor-img{
+    display: flex;
+}
+
+.contenido-img{
+    width: 200px;
+	padding: 5px;
+    margin-right: 1rem;
+}
+
+.contenido-img img{
+    border-radius: 100%;
+    width: 100%;
+}
+
+.contenido-img img:hover{
+    cursor: pointer;
+    transition: all 0.7s ease;
+    /*border-radius: 0;*/
+    transform: scale(1.2);
+}
+
+.main article:nth-last-child(1){
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom:none;
+}
+/* SECCION ASIDE  */
+aside {
+    background:#e65a4b;
+    padding:20px;
+
+    flex:1 1 30%;
+    
+
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+aside .widget {
+    background: #e0e3ec;
+    height:150px;
+
+}
+section aside  p {
+  font-size: 11px;
+	}
+
+/* SECCION FOOTER  */
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background:#2c3e50;
+    width: 100%;
+    padding:20px;
+
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    font-size: 12px;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    padding: 2px;
+}
+footer .copyright{
+    text-align: center;
+}
+footer .info-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .redes-sociales{
+    display: flex;
+    flex-direction: column;
+}
+footer .redes-sociales i{
+    margin-right: .2rem;
+}
+footer .redes-sociales a:hover{
+    opacity: 0.4;
+}
+
+/*
+
+    PAGINA DE SERVICIOS
+
+*/
+
+.servicios .encabezado-servicios{
+    font-size: 32px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.servicios .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.servicios .fila .col{
+    border-radius: 5px;
+    padding: 1rem;
+    background: #e65a4b85;
+    color: #fff;
+    width: 48%;
+}
+
+.servicios .fila .col:hover h3{
+    transition: all .7s ease;
+    transform: scale(1.3);
+}
+.servicios .fila .col:hover img{
+    transition: all .7s ease;
+    border-radius: 0;
+}
+
+.servicios .fila .col .titulo_servicio{
+    margin-bottom: 0.5rem;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.servicios .fila .contenido {
+    display: flex;
+    justify-content: space-between;
+}
+.servicios .contenido div, .servicios .contenido p{
+    width: 48%;
+}
+.servicios .contenido div img{
+    border-radius: 30%;
+    width: 100%;
+}
+
+/* 
+
+    PAGINA QUIENES SOMOS
+
+*/
+
+.titulo-quienes{
+    font-size: 32px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.grilla-quienes{
+    padding: 1rem;
+    background: #e65a4b85;
+    color: rgb(7, 4, 4);
+    margin: 1rem 0;
+    border-radius: 5px;
+
+
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.grilla-quienes .img-grilla img{
+    width:80%;
+    border-radius: 10px;
+    animation: imgGrillaAnimacion 1s 1 ease;
+}
+
+@keyframes imgGrillaAnimacion {
+    from{transform: scale(0.2)}
+    to{transform: scale(1)}
+}
+
+/* 
+
+    PAGINA PRODUCTOS
+
+*/
+
+
+#galeria .columna-categorias{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+#galeria .columna-categorias h5{
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
+}
+#galeria .columna-categorias .listado-categorias ul{
+    list-style: none;
+    padding: 0;
+}
+.listado-categorias ul li {
+    margin-bottom: .2rem;
+}
+.listado-categorias ul li a{
+    text-decoration: none;
+    color: #b90d0d;
+}
+.listado-categorias ul li a:hover{
+    transition: all .3s ease;
+    opacity: .5;
+}
+
+
+#galeria .columna-productos .card {
+    padding-top: 1rem;
+}
+#galeria .columna-productos .precio-producto{
+    color: #e65a4b;
+}
+#galeria .columna-productos .btn-comprar{
+    background-color:#e65a4b;
+    border-color: #e65a4b;
+}
+#galeria .columna-productos .btn-comprar:hover{
+    transition: all .5s ease;
+    transform: scale(1.1);
+}
+
+#galeria img
+{ 
+    height: 250px;
+}
+#galeria .card:hover{ 
+    transition: all .2s ease;
+    /*border: 2px solid #e65a4b;*/
+    outline: 2px solid #e65a4b;
+}
+
+/*
+
+    PAGINA DE CONTACTO
+
+*/
+
+.contacto {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.titulo-contacto{
+    font-size: 32px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.contenedor-form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contentido-img-contacto{
+    width: 45%;
+}
+.contentido-img-contacto img{
+    width: 100%;
+    border-radius: 10px;
+    animation: animacionContactoImg 1s 1 ease;
+}
+
+@keyframes animacionContactoImg {
+    from{transform: scale(0.2)}
+    to{transform: scale(1)}
+}
+
+.formulario{
+    width: 45%;
+}
+
+.formulario form {
+    padding: 1rem;
+    background: #e65a4b85;
+    color: #fff;
+}
+
+form p {
+    display: flex;
+    margin: .5rem 0;
+}
+
+form p label{
+    font-size: 14px;
+    display: block;
+    width: 65px;
+    margin-right: 0.5rem;
+}
+form p input, form p textarea{
+    padding: 0.2rem 0.5rem;
+}
+
+form .btn-enviar{
+    cursor: pointer;
+    margin-top: .3rem;
+    font-family: 'Poppins';
+    background: #e65a4b;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+form .btn-enviar:hover{
+    background: #e74c3c;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        flex-direction:column;
+    }
+
+    header {
+        flex-direction:column;
+        padding:0;
+    }
+
+    header .logo {
+        margin:20px 0;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    aside {
+        flex-direction:row;
+        flex:0;
+    }
+
+    aside .widget {
+        flex-grow:1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        flex-direction:column;
+    }
+
+    footer {
+        justify-content:space-around;
+    }
+}
+
+footer div {
+    background-image: linear-gradient(to bottom, orange,rgb(223, 120, 35));
+    padding: 0.5rem;
+}
+
+
+
+
+
